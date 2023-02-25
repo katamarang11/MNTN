@@ -1,0 +1,141 @@
+.website-background {
+  background-image: url(../img/bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 64px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 198px;
+
+    .site-logo {
+      transition: 0.5s;
+
+      svg path {
+        fill: rgb(255, 255, 255);
+        transition: 0.5s;
+      }
+
+      &:hover {
+        color: black;
+        transition: 0.5s;
+      }
+
+      &:hover svg path {
+        fill: rgb(0, 0, 0);
+        transition: 0.5s;
+      }
+    }
+
+    .site-navigation {
+      display: flex;
+      column-gap: 40px;
+
+      .site-navigation__link {
+        transition: 0.5s;
+
+        &:hover {
+          color: black;
+          transition: 0.5s;
+        }
+      }
+    }
+
+    .site-enter {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      transition: 0.5s;
+
+      svg path {
+        fill: rgb(255, 255, 255);
+        transition: 0.5s;
+      }
+
+      &:hover {
+        color: black;
+        transition: 0.5s;
+      }
+
+      &:hover svg path {
+        fill: rgb(0, 0, 0);
+        transition: 0.5s;
+      }
+
+      .site-enter__text {
+        display: block;
+      }
+    }
+  }
+
+  // ====================================
+
+  .info-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 32px;
+
+    max-width: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1100px;
+
+    .info-header__title {
+      padding-left: 104px;
+      color: #fbd784;
+      font-size: 18px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: #fbd784;
+        top: 50%;
+        left: 0;
+        width: 72px;
+        height: 2px;
+      }
+    }
+
+    .info-header__text {
+      font-size: 88px;
+      color: white;
+      font-family: "Chronicle Display Semibold";
+    }
+
+    .scroll-btn {
+      display: flex;
+      column-gap: 16px;
+      font-size: 18px;
+      font-family: "Gilroy Bold";
+      color: white;
+      transition: 0.5s;
+
+      &:hover {
+        transition: 0.5s;
+        color: black;
+      }
+
+      svg path {
+        transition: 0.5s;
+        fill: rgb(255, 255, 255);
+      }
+
+      &:hover svg path {
+        transition: 0.5s;
+        fill: black;
+      }
+    }
+  }
+}

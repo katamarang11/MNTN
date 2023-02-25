@@ -1,0 +1,26 @@
+@import "../css/reset.css";
+@import "./header.scss";
+@import "./fonts.scss";
+@import "./main.scss";
+@import "./footer.scss";
+
+// font-family: "Chronicle Display Semibold";
+// font-family: 'Gilroy Extra Bold';
+// font-family: 'Gilroy Medium';
+// font-family: 'Gilroy Bold';
+
+a {
+  color: white;
+}
+
+body {
+  font-family: "Gilroy Bold";
+}
+
+.wrapper {
+  max-width: 1760px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
